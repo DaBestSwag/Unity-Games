@@ -31,7 +31,7 @@ public class Shoot : MonoBehaviour {
 		Vector3 newDir = Camera.main.transform.TransformDirection(Vector3.forward);
 		Debug.DrawRay(cameraPos,newDir, Color.magenta);
 		ball.GetComponent<Rigidbody>().velocity = newDir *speed;
-
+		public float 
 
 
 

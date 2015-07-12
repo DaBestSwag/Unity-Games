@@ -17,11 +17,22 @@ public class Basketball : MonoBehaviour {
 	void Update () {
 	
 	}
+	
 
 	void OnCollisionEnter(Collision collider){
-		myAudio.PlayOneShot(boink);
-		score++;
-		Debug.Log (score);
+		float bBallVolume = GetComponent<Rigidbody>().velocity.magnitude /40;
+		//Debug.Log ("bBallVolume: " + bBallVolume);
+		myAudio.PlayOneShot(boink,bBallVolume);
+		if(collider.gameObject.tag == "Head"){
+			score++;
+			Debug.Log ("score:" + score);
+		} //else if (collider.gameObject.tag == "Curry"){
+//			Debug.Log ("Ha U Missed");
+//		}
+
+		//score++;
+		
+
 
 	}
 }
