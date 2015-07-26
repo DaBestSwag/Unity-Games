@@ -19,7 +19,7 @@ public class Basketball : MonoBehaviour {
 	}
 	
 
-	void OnCollisionEnter(Collision collider){
+	void OnTriggerEnter(Collider collider){
 		float bBallVolume = GetComponent<Rigidbody>().velocity.magnitude /40;
 		//Debug.Log ("bBallVolume: " + bBallVolume);
 		myAudio.PlayOneShot(boink,bBallVolume);
@@ -35,4 +35,9 @@ public class Basketball : MonoBehaviour {
 
 
 	}
+	void OnCollisionEnter(Collision Collider){
+		float bBallVolume = GetComponent<Rigidbody>().velocity.magnitude /40;
+		myAudio.PlayOneShot(boink,bBallVolume);
+	}
+
 }

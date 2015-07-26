@@ -47,8 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Basketball.cs" />
+     <Compile Include="Assets\CurryMove.cs" />
+     <Compile Include="Assets\GOSoundRestart.cs" />
+     <Compile Include="Assets\Look At.cs" />
      <Compile Include="Assets\PickUpBall.cs" />
      <Compile Include="Assets\Shoot.cs" />
+     <Compile Include="Assets\Timer.cs" />
+     <Compile Include="Assets\UIScore.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
